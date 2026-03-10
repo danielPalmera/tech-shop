@@ -160,15 +160,15 @@ Las sombras son de color neutro (mismo tono que `--color-text-secondary`) con op
 ┌─────────────────────────────┐
 │  ┌───────────────────────┐  │
 │  │                       │  │
-│  │    imagen producto     │  │  ← aspect-ratio 4/3 · object-fit: cover
+│  │    imagen producto    │  │  ← aspect-ratio 4/3 · object-fit: cover
 │  │                       │  │
 │  └───────────────────────┘  │
-│                              │
-│  Nombre del producto         │  ← font-size lg · semibold · text-primary
-│  Descripción breve (opc.)    │  ← font-size sm · regular · text-secondary
-│                              │
-│  169 €                  [●]  │  ← precio: lg · bold · text-primary
-│                              │     badge stock: alineado a la derecha
+│                             │
+│  Nombre del producto        │  ← font-size lg · semibold · text-primary
+│  Descripción breve (opc.)   │  ← font-size sm · regular · text-secondary
+│                             │
+│  169 €                 [●]  │  ← precio: lg · bold · text-primary
+│                             │     badge stock: alineado a la derecha
 │  ┌──────────────────────┐   │
 │  │   Añadir al carrito  │   │  ← botón primario · ancho completo
 │  └──────────────────────┘   │
@@ -197,9 +197,9 @@ La imagen ocupa el ancho completo de la tarjeta. En móvil la tarjeta no tiene `
 Elemento en línea que indica disponibilidad. Siempre visible en la tarjeta.
 
 ```
- ● En stock      ← verde
- ● Pocas unidades ← naranja
- ● Agotado       ← rojo
+ ● En stock         ← verde
+ ● Pocas unidades   ← naranja
+ ● Agotado          ← rojo
 ```
 
 | Propiedad | Valor |
