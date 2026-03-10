@@ -1,4 +1,4 @@
-# Botiga Tech — Modernización de una tienda online
+# Tech Shop — Modernización de una tienda online
 
 ## El punto de partida
 
@@ -58,7 +58,7 @@ Las especificaciones de colores y tipografía están en `style-guide.md`.
 ## Estructura de archivos esperada
 
 ```
-botiga-tech/
+tech-shop/
 ├── index.html
 ├── css/
 │   └── style.css
@@ -80,8 +80,8 @@ Sigue este orden. No saltes pasos.
 3. Clona **tu fork** a local:
 
 ```bash
-git clone https://github.com/TU-USUARIO/botiga-tech.git
-cd botiga-tech
+git clone https://github.com/TU-USUARIO/tech-shop.git
+cd tech-shop
 ```
 
 4. Comprueba que el remote apunta a tu fork:
