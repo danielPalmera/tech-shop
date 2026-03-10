@@ -2,7 +2,7 @@
 
 ## El punto de partida
 
-En la carpeta `Temario/2.Arquitectura-Web/14_Tienda-online` hay una tienda online de informática escrita en 2010. Ábrela en el navegador y en el editor. Observa cómo está construida:
+En la carpeta `/14_Tienda-online` hay una tienda online de informática escrita en 2010. Ábrela en el navegador y en el editor. Observa cómo está construida:
 
 - `DOCTYPE XHTML 1.0 Transitional` — una especificación que lleva más de una década obsoleta.
 - Fondo negro, Comic Sans, anchos fijos en píxeles. Sin respuesta para móvil.
