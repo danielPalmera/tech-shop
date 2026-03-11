@@ -179,7 +179,7 @@ header{
     background-size: 20px;
 }
 
-#category{
+#openMenuCategory{
     padding-left: 40px;
     background-image: url(../img/icons/icon-menu.png);
     background-repeat: no-repeat;
@@ -192,3 +192,6 @@ header{
     gap:var(--space-8);
 }
 
+main{
+    text-align: center;
+}

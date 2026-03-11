@@ -29,7 +29,7 @@
                 </form>
             </div>
             <div class="categories">
-                <button type="button" id="category">Todas las Categorias</button>
+                <button type="button" id="openMenuCategory">Todas las Categorias</button>
             </div>
             <div class="icons">
                 <img src="assets/img/icons/cart-shopping.svg" alt="Buscar" width="48" height="48">
@@ -50,7 +50,6 @@
         </div>
         -->
     </header>
-
     <div class="container layout">
         <main>
             <article>
@@ -73,7 +72,18 @@
             <li><a href="#download">Download</a></li>
         </ul>
     </nav>
+    <nav id="sidebarMenuCategory" class="sidebarMenuCategory">
+        <button id="closeMenuCategory" class="btn-close">×</button>
+        <ul class="menu-links-sidebar-category">
+            <li><a href="#">Memorias</a></li>
+            <li><a href="#">Ciscos</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Otros</a></li>
+        </ul>
+    </nav>
     <div id="overlay" class="overlay"></div>
+    <div id="overlayCategory" class="overlayCategory"></div>
+    
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

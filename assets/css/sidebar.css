@@ -1,12 +1,12 @@
 /* Estilos base del Sidebar */
-.sidebar {
+.sidebar, .sidebarMenuCategory {
     position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 75%;
     height: 100%;
     background: var(--color-bg);
-   color: var(--color-text-primary);
+    color: var(--color-text-primary);
     transition: transform 0.3s ease; /* Animación suave */
     transform: translateX(-100%); /* Escondido por defecto */
     z-index: 1000;
@@ -14,12 +14,12 @@
 }
     
 /* Clase que aplicaremos con JS */
-.sidebar.active {
+.sidebar.active, .sidebarMenuCategory.active {
     transform: translateX(0);
 }
 
 /* Capa oscura de fondo */
-.overlay {
+.overlay, .overlayCategory {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@
     z-index: 999;
 }
 
-.overlay.active {
+.overlay.active, .overlayCategory.active {
     display: block;
 }
 #sidebar{
@@ -40,4 +40,12 @@
 .menu-links-sidebar { list-style: none; padding: 0; margin-top: 50px; }
 .menu-links-sidebar li { padding: 15px 0; text-align: center}
 .menu-links-sidebar a { color: var(--color-text-primary); text-decoration: none; font-size: 1.2rem; ; }
+
+/* Botones y links (estética básica) */
+.menu-links-sidebar-category { list-style: none; padding: 0; margin-top: 50px; }
+.menu-links-sidebar-category li { padding: 15px 0; text-align: center}
+.menu-links-sidebar-category a { color: var(--color-text-primary); text-decoration: none; font-size: 1.2rem; ; }
+.btn-close { background: none; border: none; color: var(--color-text-primary); font-size: 2rem; cursor: pointer; position: absolute; right: 20px; }
+
+
 .btn-close { background: none; border: none; color: var(--color-text-primary); font-size: 2rem; cursor: pointer; position: absolute; right: 20px; }
