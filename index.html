@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>appinformatica | Inicio</title>
+    <title>Botiga Tech | Inicio</title>
     <link data-react-helmet="true" href="assets/img/favicon.ico" rel="icon"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/ficha-producto.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
             <div class="brand">
-                <a href="#">
-                    <img id="logo" src="assets/img/logo.svg" width="120" height="120" alt="logo">
+                <a class="logo" href="#">
+                    <span>Botiga Tech</span>
+                    <!--<img id="logo" src="assets/img/logo.svg" width="120" height="120" alt="logo">-->
                 </a>
             </div>
             <div class="search-bar">
@@ -29,33 +31,334 @@
                 </form>
             </div>
             <div class="categories">
-                <button type="button" id="openMenuCategory">Todas las Categorias</button>
+                <button type="button" id="openMenuCategory">Categorias</button>
             </div>
             <div class="icons">
                 <img src="assets/img/icons/cart-shopping.svg" alt="Buscar" width="48" height="48">
                 <img src="assets/img/icons/circle-user.svg" alt="Buscar" width="48" height="48">
-                <img id="openMenu" src="assets/img/icons/icon-menu.png" alt="Buscar" width="48" height="48">
+                <img class="menu-mobile" id="openMenu" src="assets/img/icons/icon-menu.png" alt="Buscar" width="48" height="48">
             </div>
         </div>
-        <!--
         <div class="container header-top">
             <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
                 </ul>
             </nav>
         </div>
-        -->
+        <style>
+            
+        </style>
     </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" aria-label="Promociones destacadas">
+        <div class="hero-slider__track">
+            <div class="hero-slide active" style="background-image: url('assets/img/productos/1.jpg');">
+                <div class="hero-slide__content">
+                    <h3>Componentes de Alto Rendimiento</h3>
+                    <p>Encuentra las mejores tarjetas gráficas, procesadores y más para tu PC gaming.</p>
+                    <button class="hero-slide__btn">Ver ofertas</button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/img/productos/2.jpg');">
+                <div class="hero-slide__content">
+                    <h3>Portátiles en Oferta</h3>
+                    <p>Hasta un 30% de descuento en portátiles de las mejores marcas del mercado.</p>
+                    <button class="hero-slide__btn">Comprar ahora</button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/img/productos/3.jpg');">
+                <div class="hero-slide__content">
+                    <h3>Periféricos Gaming</h3>
+                    <p>Teclados mecánicos, ratones y auriculares para llevar tu juego al siguiente nivel.</p>
+                    <button class="hero-slide__btn">Explorar</button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/img/productos/4.jpg');">
+                <div class="hero-slide__content">
+                    <h3>Almacenamiento SSD</h3>
+                    <p>Discos SSD NVMe con velocidades de lectura de hasta 7000 MB/s.</p>
+                    <button class="hero-slide__btn">Ver productos</button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/img/productos/5.jpg');">
+                <div class="hero-slide__content">
+                    <h3>Monitores Profesionales</h3>
+                    <p>Pantallas 4K y ultrawide para trabajo y entretenimiento con colores precisos.</p>
+                    <button class="hero-slide__btn">Descubrir</button>
+                </div>
+            </div>
+        </div>
+        <button class="hero-slider__prev" aria-label="Slide anterior">&#10094;</button>
+        <button class="hero-slider__next" aria-label="Slide siguiente">&#10095;</button>
+        <div class="hero-slider__dots">
+            <button class="hero-dot active" aria-label="Ir al slide 1"></button>
+            <button class="hero-dot" aria-label="Ir al slide 2"></button>
+            <button class="hero-dot" aria-label="Ir al slide 3"></button>
+            <button class="hero-dot" aria-label="Ir al slide 4"></button>
+            <button class="hero-dot" aria-label="Ir al slide 5"></button>
+        </div>
+    </section>
+
     <div class="container layout">
         <main>
-            <article>
-                <h1>Here comes the sun</h1>
-                <p>Contenido principal de ejemplo. Sustituye este texto por el contenido real de la página.</p>
-            </article>
+            <section id="ofertas" aria-label="Ofertas destacadas">
+                <div id="ofertas" class="header-section">
+                    <h2>Ofertas destacadas</h2>
+                    <p>Aprovecha los descuentos de hasta un 20% en componentes para PC.</p>
+                </div>
+                
+                <div class="slider-ofertas">
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Nombre del producto</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">169 €</span>
+                            <span class="stock stock-in">
+                                ● En stock
+                            </span>
+                        </div>
+                        <button class="btn">Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Nombre del producto</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">169 €</span>
+                            <span class="stock stock-low">
+                                ● Pocas unidades
+                            </span>
+                        </div>
+                        <button class="btn">Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Nombre del producto</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">169 €</span>
+                            <span class="stock stock-out">
+                                ● Agotado
+                            </span>
+                        </div>
+                        <button class="btn" disabled >Añadir al carrito </button>
+                    </article>
+                </div>
+            </section>
+            <section id="catalogo" aria-label="Catalogo de productos">
+                <div  id="productos"  class="header-section">
+                    <h2>Catalogo de Productos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="grilla-productos">
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Antivirus</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">33 €</span>
+                            <span class="stock stock-in">
+                                ● 5 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Gráfica</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">169 €</span>
+                            <span class="stock stock-low">
+                                ● 2 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Disco duro</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">36 €</span>
+                            <span class="stock stock-in">
+                                ● 8 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Ordenador</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">360 €</span>
+                            <span class="stock stock-low">
+                                ● 3 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Bolso portátil </h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">11 €</span>
+                            <span class="stock stock-in">
+                                ● 10 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Portátil</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">540 €</span>
+                            <span class="stock stock-in">
+                                ● 4 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Memoria RAM</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">21 €</span>
+                            <span class="stock stock-low">
+                                ● 3 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Router</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">66 €</span>
+                            <span class="stock stock-low">
+                                ● 1 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/productos/1.jpg" alt="imagen producto">
+                        </figure>
+                        <h3 class="font-lg">Sintonizadora TV</h3>
+                        <p class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="precio-stock">
+                            <span class="precio">25 €</span>
+                            <span class="stock stock-low">
+                                ● 2 unidades
+                            </span>
+                        </div>
+                        <button class="btn" >Añadir al carrito </button>
+                    </article>
+                </div>
+            </section>
+            <section id="banenrs" aria-label="Banners Publicitarios">
+                <div class="header-section">
+                    <h2>Trucos y Sugerencias</h2>
+                    <pLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="grilla-blog">
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/blog/Panel10_Image_Row1_Col1_1x.avif" alt="imagen producto">
+                        </figure>
+                        
+                        <h3 class="font-lg">NOMBRE ARTICULO</h3>
+                        <div class="precio-stock">
+                            <span class="precio">10 Feb 26</span>
+                            <span class="stock stock-in">BLOG</span>
+                        </div>
+                        <button class="btn">READ MORE</button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/blog/Panel10_Image_Row1_Col1_1x.avif" alt="imagen producto">
+                        </figure>
+                        
+                        <h3 class="font-lg">NOMBRE ARTICULO</h3>
+                        <div class="precio-stock">
+                            <span class="precio">10 Feb 26</span>
+                            <span class="stock stock-in">BLOG</span>
+                        </div>
+                        <button class="btn">READ MORE</button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/blog/Panel10_Image_Row1_Col1_1x.avif" alt="imagen producto">
+                        </figure>
+                        
+                        <h3 class="font-lg">NOMBRE ARTICULO</h3>
+                        <div class="precio-stock">
+                            <span class="precio">10 Feb 26</span>
+                            <span class="stock stock-in">BLOG</span>
+                        </div>
+                        <button class="btn">READ MORE</button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/blog/Panel10_Image_Row1_Col1_1x.avif" alt="imagen producto">
+                        </figure>
+                        
+                        <h3 class="font-lg">NOMBRE ARTICULO</h3>
+                        <div class="precio-stock">
+                            <span class="precio">10 Feb 26</span>
+                            <span class="stock stock-in">BLOG</span>
+                        </div>
+                        <button class="btn">READ MORE</button>
+                    </article>
+                    <article class="ficha-producto">
+                        <figure>
+                            <img src="assets/img/blog/Panel10_Image_Row1_Col1_1x.avif" alt="imagen producto">
+                        </figure>
+                        
+                        <h3 class="font-lg">NOMBRE ARTICULO</h3>
+                        <div class="precio-stock">
+                            <span class="precio">10 Feb 26</span>
+                            <span class="stock stock-in">BLOG</span>
+                        </div>
+                        <button class="btn">READ MORE</button>
+                    </article>
+                </div>
+            </section>
         </main>
     </div>
     <footer class="site-footer">
@@ -65,20 +368,41 @@
     </footer>
     <nav id="sidebar" class="sidebar">
         <button id="closeMenu" class="btn-close">×</button>
+        <img class="logoSidebarr" id="logo" src="assets/img/logo.svg" width="120" height="120" alt="logo">
+        <hr>
         <ul class="menu-links-sidebar">
-            <li><a href="#premium">Premium</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#help">Help</a></li>
-            <li><a href="#download">Download</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Carrito</a></li>
         </ul>
     </nav>
     <nav id="sidebarMenuCategory" class="sidebarMenuCategory">
         <button id="closeMenuCategory" class="btn-close">×</button>
+        <img class="logoSidebarr" id="logo" src="assets/img/logo.svg" width="120" height="120" alt="logo">
+        <hr>
+        <h3>Categorias</h3>
         <ul class="menu-links-sidebar-category">
             <li><a href="#">Memorias</a></li>
-            <li><a href="#">Ciscos</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Otros</a></li>
+            <li><a href="#">Procesadores</a></li>
+            <li><a href="#">Tarjetas Gráficas</a></li>
+            <li><a href="#">Placas Base</a></li>
+            <li><a href="#">Discos Duros</a></li>
+            <li><a href="#">SSD</a></li>
+            <li><a href="#">Fuentes de Alimentación</a></li>
+            <li><a href="#">Refrigeración</a></li>
+            <li><a href="#">Cajas para PC</a></li>
+            <li><a href="#">Monitores</a></li>
+            <li><a href="#">Teclados</a></li>
+            <li><a href="#">Ratones</a></li>
+            <li><a href="#">Auriculares</a></li>
+            <li><a href="#">Altavoces</a></li>
+            <li><a href="#">Impresoras</a></li>
+            <li><a href="#">Routers</a></li>
+            <li><a href="#">Cables y Adaptadores</a></li>
+            <li><a href="#">Cámaras Web</a></li>
+            <li><a href="#">Sillas Gaming</a></li>
+            <li><a href="#">Accesorios</a></li>
         </ul>
     </nav>
     <div id="overlay" class="overlay"></div>

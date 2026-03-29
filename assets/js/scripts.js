@@ -56,3 +56,47 @@ openMenuCategory.addEventListener('click', () => {
     sidebarMenuCategory.classList.add('active');
     overlayCategory.classList.add('active');
 });
+
+/* ========================
+   Hero Slider
+   ======================== */
+(function () {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    const prevBtn = document.querySelector('.hero-slider__prev');
+    const nextBtn = document.querySelector('.hero-slider__next');
+
+    if (!slides.length) return;
+
+    let current = 0;
+    let autoplayTimer;
+
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    function startAutoplay() {
+        autoplayTimer = setInterval(next, 5000);
+    }
+
+    function resetAutoplay() {
+        clearInterval(autoplayTimer);
+        startAutoplay();
+    }
+
+    prevBtn.addEventListener('click', () => { prev(); resetAutoplay(); });
+    nextBtn.addEventListener('click', () => { next(); resetAutoplay(); });
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => { goTo(i); resetAutoplay(); });
+    });
+
+    startAutoplay();
+})();

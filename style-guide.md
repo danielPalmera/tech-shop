@@ -94,14 +94,15 @@ No se usa ninguna otra familia en esta interfaz. No usar serif, monospace ni fue
 
 La base del sistema es **1rem = 16px** (tamaño de fuente raíz del navegador, no modificar en `html`).
 
-| Paso    | rem       | px   | Peso habitual  | Uso principal |
-| ------- | --------- | ---- | -------------- | ------------- |
-| `xs`    | 0.75 rem  | 12px | Semibold 600   | Badges, captions, etiquetas de stock |
-| `sm`    | 0.875 rem | 14px | Regular 400    | Texto de apoyo, cabeceras de tabla, placeholders |
-| `base`  | 1 rem     | 16px | Regular 400    | Párrafos, descripciones, ítems de lista |
-| `lg`    | 1.125 rem | 18px | Semibold 600   | Nombre de producto en tarjeta, precio |
-| `xl`    | 1.5 rem   | 24px | Bold 700       | Título de sección — `<h2>` |
-| `2xl`   | 2 rem     | 32px | Bold 700       | Título de página — `<h1>` |
+| Paso    | rem       | px   | Peso habitual  | Uso principal                                       |
+| ------- | --------- | ---- | -------------- | -------------                                       |
+| `xs`    | 0.75 rem  | 12px | Semibold 600   | Badges, captions, etiquetas de stock                |
+| `sm`    | 0.875 rem | 14px | Regular 400    | Texto de apoyo, cabeceras de tabla, placeholders    |
+| `base`  | 1 rem     | 16px | Regular 400    | Párrafos, descripciones, ítems de lista             |
+| `lg`    | 1.125 rem | 18px | Semibold 600   | Nombre de producto en tarjeta, precio               |
+| `xl`    | 1.5 rem   | 24px | Bold 700       | Título de sección — `<h2>`                          |
+| `2xl`   | 2 rem     | 32px | Bold 700       | Título de página — `<h1>`                           |
+
 
 ### Altura de línea
 
@@ -144,11 +145,11 @@ Sistema de 8 puntos: todos los espaciados interiores (padding) y exteriores (mar
 
 Las sombras son de color neutro (mismo tono que `--color-text-secondary`) con opacidad reducida. No usar sombras de color saturado.
 
-| Token         | Valor                                   | Uso |
-| ------------- | --------------------------------------- | --- |
-| `--shadow-sm` | `0 1px 2px hsl(220 9% 46% / 8%)`       | Tarjeta en reposo |
+| Token         | Valor                                  | Uso                                      |
+| ------------- | ---------------------------------------| ---                                      |
+| `--shadow-sm` | `0 1px 2px hsl(220 9% 46% / 8%)`       | Tarjeta en reposo                        |
 | `--shadow-md` | `0 4px 12px hsl(220 9% 46% / 12%)`     | Tarjeta en `:hover` · elementos elevados |
-| `--shadow-lg` | `0 8px 24px hsl(220 9% 46% / 16%)`     | Modales, dropdowns |
+| `--shadow-lg` | `0 8px 24px hsl(220 9% 46% / 16%)`     | Modales, dropdowns                       
 
 ---
 
@@ -188,7 +189,8 @@ Las sombras son de color neutro (mismo tono que `--color-text-secondary`) con op
 | Transición | `box-shadow 0.2s ease, transform 0.2s ease` |
 | Padding interno | `--space-4` (móvil) · `--space-6` (desktop) |
 
-La imagen ocupa el ancho completo de la tarjeta. En móvil la tarjeta no tiene `border-radius` lateral (va de borde a borde). En desktop sí.
+La imagen ocupa el ancho completo de la tarjeta. En móvil la tarjeta no tiene `border-radius` 
+lateral (va de borde a borde). En desktop sí.
 
 ---
 
@@ -268,7 +270,7 @@ El header es pegajoso (`position: sticky; top: 0`) con fondo `--color-surface` y
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  Botiga Tech          Inicio  Productos  Carrito (2)      │
+│  Botiga Tech          Inicio  Productos  Carrito (2)     │
 └──────────────────────────────────────────────────────────┘
 ```
 
